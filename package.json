@@ -8,7 +8,7 @@
       "name": "Jake Anderson",
       "email": "jakebanderson321@gmail.com"
     }
-  ], 
+  ],
   "main": "./budget-text.js",
   "scripts": {
     "test": "vows --spec --isolate"
@@ -20,6 +20,7 @@
   ],
   "dependencies": {
     "chance": "^1.0.2",
+    "cleverbot.io": "^1.0.4",
     "firebase": "^2.4.2",
     "lodash": "^4.11.1",
     "moment-timezone": "^0.5.3",
