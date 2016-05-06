@@ -1,0 +1,27 @@
+{
+  "name": "budget-text",
+  "version": "0.1.0",
+  "description": "Library for text interaction with participants to query budget information",
+  "author": "Eric Anderson <ericjanderson4@gmail.com>",
+  "contributors": [
+    {
+      "name": "Jake Anderson",
+      "email": "jakebanderson321@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "vows --spec --isolate"
+  },
+  "keywords": [
+    "budgettext",
+    "sms",
+    "bot"
+  ],
+  "dependencies": {
+    "chance": "^1.0.2",
+    "firebase": "^2.4.2",
+    "lodash": "^4.11.1",
+    "moment-timezone": "^0.5.3",
+    "plivo": "^0.3.3"
+  }
+}
