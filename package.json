@@ -8,7 +8,8 @@
       "name": "Jake Anderson",
       "email": "jakebanderson321@gmail.com"
     }
-  ],
+  ], 
+  "main": "./budget-text.js",
   "scripts": {
     "test": "vows --spec --isolate"
   },
