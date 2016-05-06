@@ -23,6 +23,7 @@
     "chrono-node": "^1.2.1",
     "cleverbot.io": "^1.0.4",
     "firebase": "^2.4.2",
+    "knwl.js": "git+https://github.com/eanderson4/Knwl.js.git",
     "lodash": "^4.11.1",
     "moment-timezone": "^0.5.3",
     "plivo": "^0.3.3",
