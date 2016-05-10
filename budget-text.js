@@ -161,7 +161,7 @@ function calculateSubtotals(uid,record){
 
 
   var config = getConfig();
-  
+
   var promise = new Promise(function(resolve,reject){
 
     var pack = record.pack;
@@ -186,7 +186,9 @@ function calculateSubtotals(uid,record){
         keys.forEach(function(key){
           var amount = pack.materials[key];
           console.log("Has",key,amount);
-          var cost_pu = mat_costs[key] || config.materials[key].cost;
+          var cost_pu = mat_costs[key] || parseFloat(config.materials[key].cost);
+          
+          
           pack.materials[key+'-pu'] = cost_pu;
           pack.materials[key+'-sub'] = cost_pu*amount;
           mat_sub += cost_pu*amount;
