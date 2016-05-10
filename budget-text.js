@@ -187,8 +187,8 @@ function calculateSubtotals(uid,record){
           var amount = pack.materials[key];
           console.log("Has",key,amount);
           //var cost_pu = mat_costs[key] || parseFloat(config.materials[key].cost);
-          var cost_pu = mat_costs[key] || 0.1;
-          
+          //var cost_pu = mat_costs[key] || 0.1;
+          var cost_pu = 0.1;
           
           pack.materials[key+'-pu'] = cost_pu;
           pack.materials[key+'-sub'] = cost_pu*amount;
