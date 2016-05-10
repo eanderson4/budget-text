@@ -159,6 +159,9 @@ function getLaborCosts(uid,partKey){
 function calculateSubtotals(uid,record){
   console.log("[",uid,"] Calculate Subtotal :",record);  
 
+
+  var config = getConfig();
+  
   var promise = new Promise(function(resolve,reject){
 
     var pack = record.pack;
