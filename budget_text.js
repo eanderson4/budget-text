@@ -171,6 +171,7 @@ function calculateSubtotals(uid,record){
       console.log("[",uid,"] Calculate Subtotal : Have material costs",costs);  
       getMaterials(costs);
     },function(err){
+      console.log("Error getting material costs",err);
       getMaterials({});
     });
     
@@ -200,6 +201,7 @@ function calculateSubtotals(uid,record){
         getInfo(part.HourlyRate);  
       },function(err){
         //No data
+        console.log("No labor costs found!??!");
         getInfo();  
       });
       
@@ -235,6 +237,7 @@ function calculateSubtotals(uid,record){
         pack_total += info_sub;
         pack['info-sub']=info_sub;
       }
+      console.log("Wrap this shit up!");
       finish();
     }
 
